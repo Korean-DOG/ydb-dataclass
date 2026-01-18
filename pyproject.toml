@@ -7,19 +7,15 @@ name = "ydb-dataclass"
 version = "0.1.0"
 description = "Библиотека для работы с YDB через dataclass с явными типами"
 readme = "README.md"
-authors = [
-    {name = "Korean-DOG", email="phghost@mail.ru"},
-]
-license = {text = "MIT"}
-dependencies = [
-    "ydb>=3.0.0",  # Поднимаем версию для Python 3.12
-]
+authors = [{ name = "Korean-DOG", email="phghost@mail.ru" }]
+license = { text = "MIT" }
+dependencies = ["ydb>=3.0.0"]
 
 [project.urls]
 Homepage = "https://github.com/Korean-DOG/ydb-dataclass"
 
-[tool.setuptools]
-package-dir = {"" = "src"}
+[tool.setuptools.package-dir]
+"" = "src"
 
 [tool.setuptools.packages.find]
 where = ["src"]
